@@ -128,3 +128,20 @@ public static void main(String...somu) {
 
 
 }
+
+
+// Sum of digits of a number
+// Input: 123 → Output: 6
+
+
+ class Number6 {
+	public static void main(String...somu) {
+		int sum=0;
+		for(int n=123;n>0;n=n/10) {
+			int i=n%10;
+			sum=sum+i;
+		}
+		System.out.println(sum);
+	}
+
+}
