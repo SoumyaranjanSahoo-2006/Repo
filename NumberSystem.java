@@ -111,3 +111,20 @@ class Number4 {
 }
 
 // Updated on 22 Dec
+
+
+// Count number of digits
+// Input: 12345 → Output: 5
+
+
+class Number5{
+public static void main(String...somu) {
+		int count=0;
+		for(int n=12345;n>0;n=n/10) {
+			count++;
+		}
+		System.out.println(count);
+	}
+
+
+}
