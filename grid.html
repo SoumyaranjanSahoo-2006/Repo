@@ -111,6 +111,103 @@ body {
   opacity: 0.9;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  padding: 60px 10%;
+  gap: 40px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 span {
+  color: #38bdf8;
+}
+
+.hero-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #cbd5f5;
+}
+
+.hero-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-bottom: 30px;
+  color: #e5e7eb;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.primary {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.primary:hover {
+  background: #0ea5e9;
+}
+
+.secondary {
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.secondary:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+/* Image */
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+
   </style>
 </head>
 <body>
@@ -157,6 +254,24 @@ body {
     </div>
   </div>
 </div>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm <span>Soumya</span></h1>
+    <h2>B.Tech CSE Student</h2>
+    <p>
+      Passionate about Web Development and learning new technologies.
+      I build clean, responsive, and user-friendly websites.
+    </p>
 
+    <div class="hero-buttons">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="#contact" class="btn secondary">Contact Me</a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="https://cdn-icons-png.flaticon.com/512/921/921347.png" alt="Developer">
+  </div>
+</section>
 </body>
 </html>
