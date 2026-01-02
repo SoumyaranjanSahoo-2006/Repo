@@ -279,6 +279,57 @@ body {
 }
 
 
+
+.skills {
+  background: #020617;
+  color: #e5e7eb;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #cbd5f5;
+  margin-bottom: 50px;
+}
+
+/* Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+/* Card */
+.skill-card {
+  background: #0f172a;
+  padding: 30px 20px;
+  border-radius: 16px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-card i {
+  font-size: 40px;
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+.skill-card h3 {
+  font-size: 18px;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
+}
+
   </style>
 </head>
 <body>
@@ -372,6 +423,46 @@ body {
 
   </div>
 </section>
+
+<section class="skills" id="skills">
+  <h2 class="section-title">My Skills</h2>
+  <p class="section-subtitle">Technologies I’m currently working with</p>
+
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <i class="fa-brands fa-html5"></i>
+      <h3>HTML</h3>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-brands fa-css3-alt"></i>
+      <h3>CSS</h3>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-brands fa-js"></i>
+      <h3>JavaScript</h3>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-brands fa-git-alt"></i>
+      <h3>Git</h3>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-brands fa-github"></i>
+      <h3>GitHub</h3>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-solid fa-database"></i>
+      <h3>Firebase</h3>
+    </div>
+
+  </div>
+</section>
+
 
 </body>
 </html>
