@@ -441,6 +441,108 @@ body {
 
 
 
+.projects-section {
+  padding: 80px 40px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.section-subtitle {
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* Project Cards */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Tech Stack */
+.tech-stack {
+  margin-bottom: 20px;
+}
+
+.tech-stack span {
+  display: inline-block;
+  background: #eef2ff;
+  color: #3b82f6;
+  padding: 5px 12px;
+  margin: 5px 5px 0 0;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Buttons */
+.project-links {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-primary,
+.btn-secondary {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #2563eb;
+}
+
+.btn-secondary {
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+}
+
+.btn-secondary:hover {
+  background: #3b82f6;
+  color: #fff;
+}
+
+
+
+
+
   </style>
 </head>
 <body>
@@ -649,6 +751,68 @@ body {
 
   </div>
 </section>
+
+
+<section id="projects" class="projects-section">
+  <h2 class="section-title">My Projects</h2>
+  <p class="section-subtitle">Some of my recent work</p>
+
+  <div class="projects-container">
+
+    <div class="project-card">
+      <h3>Vezzo – E-commerce Website</h3>
+      <p>
+        A frontend e-commerce website with product listing, cart system,
+        authentication UI, and responsive design.
+      </p>
+      <div class="tech-stack">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Bootstrap</span>
+      </div>
+      <div class="project-links">
+        <a href="#" class="btn-primary">Live Demo</a>
+        <a href="#" class="btn-secondary">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Student Registration System</h3>
+      <p>
+        A responsive student registration form with validation and clean UI,
+        built using web technologies.
+      </p>
+      <div class="tech-stack">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+      <div class="project-links">
+        <a href="#" class="btn-primary">Live Demo</a>
+        <a href="#" class="btn-secondary">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Personal Portfolio Website</h3>
+      <p>
+        A modern and responsive personal portfolio showcasing skills,
+        projects, and contact information.
+      </p>
+      <div class="tech-stack">
+        <span>HTML</span>
+        <span>CSS</span>
+      </div>
+      <div class="project-links">
+        <a href="#" class="btn-primary">Live Demo</a>
+        <a href="#" class="btn-secondary">GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
 
 </body>
